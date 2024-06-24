@@ -27,6 +27,8 @@ CRON_SCHEDULE=* * * * *
 
 ## Quick start
 
+Don't forget to specify PostgreSQL image version in Dockerfile. By now it's **postgres:16**
+
 ```bash
 docker build -t postgres-backup .
 ```
