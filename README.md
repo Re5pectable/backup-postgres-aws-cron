@@ -11,7 +11,7 @@ The following environment variables are required to configure the backup and upl
 PG_HOST=db-host
 PG_PORT=5432
 PG_USER=user
-PGPASSWORD=pass
+PG_PASSWORD=pass
 PG_DB=db
 
 # AWS S3 Configuration
@@ -27,7 +27,7 @@ CRON_SCHEDULE=* * * * *
 
 ## Quick start
 
-Don't forget to specify PostgreSQL image version in Dockerfile. By now it's **postgres:16**
+Don't forget to specify PostgreSQL image version in Dockerfile. For now it's **postgres:16**
 
 ```bash
 docker build -t postgres-backup .
